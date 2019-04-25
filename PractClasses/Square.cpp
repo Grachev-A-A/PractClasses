@@ -12,6 +12,11 @@ Square::Square(double a)
 	this->a = a;
 }
 
+Square::Square(double a, char * name): base(name)
+{
+	this->a = a;
+}
+
 
 Square::~Square()
 {

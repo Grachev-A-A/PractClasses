@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Circle.h"
 
+const double Circle::PI = 3.14;
 
 Circle::Circle()
 {
@@ -17,6 +18,11 @@ Circle::Circle(double r)
 {
 	if (r <= 0)throw -1;
 	this->r = r;
+}
+
+Circle::Circle(double r1, char * name): base(name)
+{
+	r = r1;
 }
 
 double Circle::S()

@@ -1,16 +1,18 @@
 #pragma once
 #include <iostream>
+#include "base.h"
 
 using namespace std;
-class Circle
+class Circle: public base
 {
 private:
 	double r;
-	const double PI = 3.14;
+	static const double PI;
 public:
 	Circle();
 	~Circle();
 	Circle(double r);
+	Circle(double r1, char* name);
 
 	double getR() { return r; }
 
